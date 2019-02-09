@@ -2,6 +2,7 @@
   "name": "afaneca",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://afaneca.com",
   "dependencies": {
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
