@@ -1,0 +1,2 @@
+export const SET_LOCALE = "SET_LOCALE";
+export const GET_LOCALIZED_STRING = "GET_LOCALIZED_STRING";
