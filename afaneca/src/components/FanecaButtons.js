@@ -60,6 +60,6 @@ export default connect(
 
 const styles = {
     btn: {
-        margin: '10px'
+        margin: '2%'
     }
 }

@@ -8,6 +8,7 @@ import FanecaBio from '../components/FanecaBio'
 import SocialConnections from '../components/SocialConnections'
 import FanecaButtons from '../components/FanecaButtons'
 import FanecaLocale from '../components/FanecaLocale'
+import FanecaScrollDown from '../components/FanecaScrollDown'
 
 class Home extends Component {
   static propTypes = {
@@ -33,7 +34,7 @@ class Home extends Component {
         <FanecaBio locale={lang} />
         <FanecaButtons locale={lang} />
         <SocialConnections locale={lang} />
-        <FanecaFooter locale={lang} />
+        <FanecaScrollDown locale={lang} />
       </div>
     )
   }
