@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { setLocale } from "../actions";
-import FanecaHeader from '../components/FanecaHeader'
-import FanecaFooter from '../components/FanecaFooter'
-import FanecaBio from '../components/FanecaBio'
-import SocialConnections from '../components/SocialConnections'
-import FanecaButtons from '../components/FanecaButtons'
-import FanecaLocale from '../components/FanecaLocale'
-import FanecaScrollDown from '../components/FanecaScrollDown'
+import FanecaHeader from './FanecaHeader'
+import FanecaFooter from './FanecaFooter'
+import FanecaBio from './FanecaBio'
+import SocialConnections from './SocialConnections'
+import FanecaButtons from './FanecaButtons'
+import FanecaLocale from './FanecaLocale'
+import FanecaScrollDown from './FanecaScrollDown'
 
 class Home extends Component {
   static propTypes = {
@@ -20,7 +20,7 @@ class Home extends Component {
     setLocale('en'); // sets the default locale
   }
 
- /*  componentDidUpdate(){
+  /* componentDidUpdate(){
     let lang = this.props.lang;
     debugger;
   } */
