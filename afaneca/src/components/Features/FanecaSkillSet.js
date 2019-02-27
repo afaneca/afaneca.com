@@ -43,7 +43,7 @@ class FanecaSkillSet extends Component {
                         <FanecaSkill name="JS / JQUERY" percentage="90.0" />
                     </div>
                     <div style={styles.skill}>
-                        <FanecaSkill name="React.js / React Native" percentage="70" />
+                        <FanecaSkill name="React.js / React Native" percentage="75" />
                     </div>
                     <div style={styles.skill}>
                         <FanecaSkill name="PHP" percentage="70" />

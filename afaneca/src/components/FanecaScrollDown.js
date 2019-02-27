@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function FanecaScrollDown() {
     return (
-        <div className="arrow">
+        <div onClick={() => { window.location.hash = 'features';}} className="arrow">
             <span></span>
             <span></span>
             

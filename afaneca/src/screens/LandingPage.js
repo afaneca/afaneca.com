@@ -32,7 +32,7 @@ class LandingPage extends Component {
 
     componentDidMount() {
         const { setLocale } = this.props;
-        setLocale('pt'); // sets the default locale
+        setLocale('en'); // sets the default locale
         this.updatePredicate();
         window.addEventListener("resize", this.updatePredicate);
     }
@@ -54,7 +54,7 @@ class LandingPage extends Component {
                 <div className="Home">
                     <Home locale={lang} />
                 </div>
-                <div className="features-bg">
+                <div id="features" className="features-bg">
                     <div className="features-wrapper">
                         {isDesktop ? (
                             <Row>
