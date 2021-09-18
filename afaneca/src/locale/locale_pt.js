@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const STRING_OCCUPATION = "Engenheiro Informático";
+export const STRING_OCCUPATION = "Engenheiro Android";
 export const STRING_GO_TO_BLOG = "Ir para Blog";
 export const STRING_DOWNLOAD_RESUME = "Download CV";
 export const STRING_BIO = "Freelancer desde os 14. Licenciado desde 2019. Entusiasta pela tecnologia, programação e problem-solving.";
@@ -14,7 +14,7 @@ export const STRING_EDUCATION_ISEC_DESCRIPTION = (
         </p>
         <p>
             O curso foca-se essencialmente no desenvolvimento de software em diferentes linguages de programação (de alto e baixo nível), 
-            desde Assembly até Java e os conceitos mais importantes de desenvolvimento.
+            desde Assembly até Java e os conceitos mais importantes de desenvolvimento e arquitetura de sistemas.
         </p>
     </div>
 );
@@ -56,3 +56,15 @@ export const STRING_EXPERIENCE_ENSO = (
 export const STRING_TECHNOLOGIES_ALSO_WORKED_WITH = "Também trabalhei com";
 export const STRING_EDUCATION_ISEC_DEGREE = "LICEN. ENGENHARIA INFORMÁTICA";
 export const STRING_EXPERIENCE_ENSO_ROLE = "Estágio Curricular";
+
+/* ITSECTOR */
+export const STRING_EXPERIENCE_IT_CONSULTANT = "Consultor de TI";
+export const STRING_EXPERIENCE_ITSECTOR = (
+    <div>
+        <ul>
+            <li>Manutenção e desenvolvimento contínuo da app de home banking android do <strong>Banco Montepio</strong></li>
+            <li><strong>Mentoria</strong> de recém-contratados e estagiários</li>
+            <li>Condução de <strong>entrevistas técnicas</strong></li>
+        </ul>
+    </div>
+);

@@ -20,7 +20,7 @@ class App extends Component {
 
 
   componentWillMount() {
-    document.title = 'António Faneca - Engenheiro Informático';
+    document.title = 'António Faneca - Android Engineer';
   }
 
   render() {

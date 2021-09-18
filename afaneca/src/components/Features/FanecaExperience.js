@@ -25,6 +25,8 @@ class FanecaExperience extends Component {
     this._getLocalizedString(strTypes.STRING_EXPERIENCE_ENSO);
     this._getLocalizedString(strTypes.STRING_EXPERIENCE_REMOTE);
     this._getLocalizedString(strTypes.STRING_EXPERIENCE_ENSO_ROLE);
+    this._getLocalizedString(strTypes.STRING_EXPERIENCE_ITSECTOR);
+    this._getLocalizedString(strTypes.STRING_EXPERIENCE_IT_CONSULTANT);
   }
 
   componentDidUpdate() {
@@ -33,6 +35,8 @@ class FanecaExperience extends Component {
     this._getLocalizedString(strTypes.STRING_EXPERIENCE_ENSO);
     this._getLocalizedString(strTypes.STRING_EXPERIENCE_REMOTE);
     this._getLocalizedString(strTypes.STRING_EXPERIENCE_ENSO_ROLE);
+    this._getLocalizedString(strTypes.STRING_EXPERIENCE_ITSECTOR);
+    this._getLocalizedString(strTypes.STRING_EXPERIENCE_IT_CONSULTANT);
   }
 
   _getLocalizedString(type) {
@@ -45,6 +49,15 @@ class FanecaExperience extends Component {
     return (
       <div>
         <h2>{this.props[strTypes.STRING_EXPERIENCE_TITLE]}</h2>
+        <FanecaExperienceItem
+          company="ITSector"
+          location="Aveiro"
+          role={this.props[strTypes.STRING_EXPERIENCE_IT_CONSULTANT]}
+          dateStart="04/2019"
+          dateEnd="?"
+        >
+          {this.props[strTypes.STRING_EXPERIENCE_ITSECTOR]}
+        </FanecaExperienceItem>
         <FanecaExperienceItem
           company="ENSO ORIGINS"
           location="Coimbra"
@@ -73,6 +86,8 @@ const mapStateToProps = state => {
     [strTypes.STRING_EXPERIENCE_ENSO]: state.locale[strTypes.STRING_EXPERIENCE_ENSO],
     [strTypes.STRING_EXPERIENCE_REMOTE]: state.locale[strTypes.STRING_EXPERIENCE_REMOTE],
     [strTypes.STRING_EXPERIENCE_ENSO_ROLE]: state.locale[strTypes.STRING_EXPERIENCE_ENSO_ROLE],
+    [strTypes.STRING_EXPERIENCE_IT_CONSULTANT]: state.locale[strTypes.STRING_EXPERIENCE_IT_CONSULTANT],
+    [strTypes.STRING_EXPERIENCE_ITSECTOR]: state.locale[strTypes.STRING_EXPERIENCE_ITSECTOR]
   };
 };
 
