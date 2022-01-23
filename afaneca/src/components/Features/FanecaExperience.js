@@ -27,6 +27,8 @@ class FanecaExperience extends Component {
     this._getLocalizedString(strTypes.STRING_EXPERIENCE_ENSO_ROLE);
     this._getLocalizedString(strTypes.STRING_EXPERIENCE_ITSECTOR);
     this._getLocalizedString(strTypes.STRING_EXPERIENCE_IT_CONSULTANT);
+    this._getLocalizedString(strTypes.STRING_EXPERIENCE_ANDROID_ENGINEER);
+    this._getLocalizedString(strTypes.STRING_EXPERIENCE_JUMIA);
   }
 
   componentDidUpdate() {
@@ -37,6 +39,8 @@ class FanecaExperience extends Component {
     this._getLocalizedString(strTypes.STRING_EXPERIENCE_ENSO_ROLE);
     this._getLocalizedString(strTypes.STRING_EXPERIENCE_ITSECTOR);
     this._getLocalizedString(strTypes.STRING_EXPERIENCE_IT_CONSULTANT);
+    this._getLocalizedString(strTypes.STRING_EXPERIENCE_ANDROID_ENGINEER);
+    this._getLocalizedString(strTypes.STRING_EXPERIENCE_JUMIA);
   }
 
   _getLocalizedString(type) {
@@ -50,11 +54,20 @@ class FanecaExperience extends Component {
       <div>
         <h2>{this.props[strTypes.STRING_EXPERIENCE_TITLE]}</h2>
         <FanecaExperienceItem
+          company="JUMIA (via Match-Profiler)"
+          location="Porto (Remote)"
+          role={this.props[strTypes.STRING_EXPERIENCE_ANDROID_ENGINEER]}
+          dateStart="12/2021"
+          dateEnd="?"
+        >
+          {this.props[strTypes.STRING_EXPERIENCE_JUMIA]}
+        </FanecaExperienceItem>
+         <FanecaExperienceItem
           company="ITSector"
           location="Aveiro"
-          role={this.props[strTypes.STRING_EXPERIENCE_IT_CONSULTANT]}
+          role={this.props[strTypes.STRING_EXPERIENCE_ANDROID_ENGINEER]}
           dateStart="04/2019"
-          dateEnd="?"
+          dateEnd="12/2021"
         >
           {this.props[strTypes.STRING_EXPERIENCE_ITSECTOR]}
         </FanecaExperienceItem>
@@ -87,7 +100,9 @@ const mapStateToProps = state => {
     [strTypes.STRING_EXPERIENCE_REMOTE]: state.locale[strTypes.STRING_EXPERIENCE_REMOTE],
     [strTypes.STRING_EXPERIENCE_ENSO_ROLE]: state.locale[strTypes.STRING_EXPERIENCE_ENSO_ROLE],
     [strTypes.STRING_EXPERIENCE_IT_CONSULTANT]: state.locale[strTypes.STRING_EXPERIENCE_IT_CONSULTANT],
-    [strTypes.STRING_EXPERIENCE_ITSECTOR]: state.locale[strTypes.STRING_EXPERIENCE_ITSECTOR]
+    [strTypes.STRING_EXPERIENCE_ITSECTOR]: state.locale[strTypes.STRING_EXPERIENCE_ITSECTOR],
+    [strTypes.STRING_EXPERIENCE_JUMIA]: state.locale[strTypes.STRING_EXPERIENCE_JUMIA],
+    [strTypes.STRING_EXPERIENCE_ANDROID_ENGINEER]: state.locale[strTypes.STRING_EXPERIENCE_ANDROID_ENGINEER],
   };
 };
 

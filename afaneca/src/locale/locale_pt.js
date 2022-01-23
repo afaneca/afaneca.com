@@ -68,3 +68,8 @@ export const STRING_EXPERIENCE_ITSECTOR = (
         </ul>
     </div>
 );
+
+/* Match Profiler/JUMIA */
+export const STRING_EXPERIENCE_ANDROID_DEVELOPER = "Programador Android";
+export const STRING_EXPERIENCE_ANDROID_ENGINEER = "Engenheiro Android";
+export const STRING_EXPERIENCE_JUMIA = "Manutenção e desenvolvimento contínuo da aplicação móvel Jumia Online Shopping.";
