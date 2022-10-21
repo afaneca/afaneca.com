@@ -73,3 +73,5 @@ export const STRING_EXPERIENCE_ITSECTOR = (
 export const STRING_EXPERIENCE_ANDROID_DEVELOPER = "Programador Android";
 export const STRING_EXPERIENCE_ANDROID_ENGINEER = "Engenheiro Android";
 export const STRING_EXPERIENCE_JUMIA = "Manutenção e desenvolvimento contínuo da aplicação móvel Jumia Online Shopping.";
+/* Match Profiler/BAE */
+export const STRING_EXPERIENCE_BAE = "Manutenção e desenvolvimento contínuo da aplicação android de homebanking do Banco ATLANTICO Europa.";

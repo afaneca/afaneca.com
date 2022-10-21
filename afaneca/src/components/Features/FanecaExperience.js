@@ -29,6 +29,7 @@ class FanecaExperience extends Component {
     this._getLocalizedString(strTypes.STRING_EXPERIENCE_IT_CONSULTANT);
     this._getLocalizedString(strTypes.STRING_EXPERIENCE_ANDROID_ENGINEER);
     this._getLocalizedString(strTypes.STRING_EXPERIENCE_JUMIA);
+    this._getLocalizedString(strTypes.STRING_EXPERIENCE_BAE);
   }
 
   componentDidUpdate() {
@@ -41,6 +42,7 @@ class FanecaExperience extends Component {
     this._getLocalizedString(strTypes.STRING_EXPERIENCE_IT_CONSULTANT);
     this._getLocalizedString(strTypes.STRING_EXPERIENCE_ANDROID_ENGINEER);
     this._getLocalizedString(strTypes.STRING_EXPERIENCE_JUMIA);
+    this._getLocalizedString(strTypes.STRING_EXPERIENCE_BAE);
   }
 
   _getLocalizedString(type) {
@@ -54,11 +56,20 @@ class FanecaExperience extends Component {
       <div>
         <h2>{this.props[strTypes.STRING_EXPERIENCE_TITLE]}</h2>
         <FanecaExperienceItem
+          company="Banco ATLANTICO Europa (via Match-Profiler)"
+          location="Lisboa (Remote)"
+          role={this.props[strTypes.STRING_EXPERIENCE_ANDROID_ENGINEER]}
+          dateStart="09/2022"
+          dateEnd="?"
+        >
+          {this.props[strTypes.STRING_EXPERIENCE_BAE]}
+        </FanecaExperienceItem>
+        <FanecaExperienceItem
           company="JUMIA (via Match-Profiler)"
           location="Porto (Remote)"
           role={this.props[strTypes.STRING_EXPERIENCE_ANDROID_ENGINEER]}
           dateStart="12/2021"
-          dateEnd="?"
+          dateEnd="09/2022"
         >
           {this.props[strTypes.STRING_EXPERIENCE_JUMIA]}
         </FanecaExperienceItem>
@@ -102,6 +113,7 @@ const mapStateToProps = state => {
     [strTypes.STRING_EXPERIENCE_IT_CONSULTANT]: state.locale[strTypes.STRING_EXPERIENCE_IT_CONSULTANT],
     [strTypes.STRING_EXPERIENCE_ITSECTOR]: state.locale[strTypes.STRING_EXPERIENCE_ITSECTOR],
     [strTypes.STRING_EXPERIENCE_JUMIA]: state.locale[strTypes.STRING_EXPERIENCE_JUMIA],
+    [strTypes.STRING_EXPERIENCE_BAE]: state.locale[strTypes.STRING_EXPERIENCE_BAE],
     [strTypes.STRING_EXPERIENCE_ANDROID_ENGINEER]: state.locale[strTypes.STRING_EXPERIENCE_ANDROID_ENGINEER],
   };
 };
