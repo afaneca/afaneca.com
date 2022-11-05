@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 import { getLocalizedString } from "../actions";
 import * as strTypes from "../locale/locale_strings";
 import { Button, Icon } from 'react-materialize'
+import { Link } from 'react-router-dom';
 
 class FanecaButtons extends Component {
     static propTypes = {
@@ -34,12 +35,13 @@ class FanecaButtons extends Component {
 
         getLocalizedString(type);
     }
-
+    
+    
     render() {
         return (
             <div>
                 <Button style={styles.btn} target="_blank" node='a' href='/blog' waves='light'>{this.props[strTypes.STRING_GO_TO_BLOG]}<Icon left>edit</Icon></Button>
-                <Button waves='light' target="_blank" node='a' href='/files/resume.pdf'>{this.props[strTypes.STRING_DOWNLOAD_RESUME]}<Icon left>description</Icon></Button>
+                <Link to="/resume"><Button waves='light' target="_blank" node='a'>{this.props[strTypes.STRING_DOWNLOAD_RESUME]}<Icon left>description</Icon></Button></Link>
             </div>
         )
     }

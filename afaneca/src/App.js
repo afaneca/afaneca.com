@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import LandingPage from './screens/LandingPage';
+import Resume from './screens/Resume';
 import reducers from "./reducers";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 
@@ -26,7 +28,12 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <LandingPage />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+        </BrowserRouter>
       </Provider>
 
     );
