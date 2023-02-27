@@ -40,13 +40,13 @@ class FanecaSkillSet extends Component {
                         <FanecaSkill name="Android SDK" percentage="90" />
                     </div>
                     <div style={styles.skill}>
+                        <FanecaSkill name="Kotlin" percentage="90" />
+                    </div>
+                    <div style={styles.skill}>
                         <FanecaSkill name="JAVA" percentage="90" />
                     </div>
                     <div style={styles.skill}>
-                        <FanecaSkill name="Kotlin" percentage="80" />
-                    </div>
-                    <div style={styles.skill}>
-                        <FanecaSkill name="GIT" percentage="80" />
+                        <FanecaSkill name="GIT" percentage="90" />
                     </div>
                     <div style={styles.skill}>
                         <FanecaSkill name="JS / JQUERY" percentage="75" />
